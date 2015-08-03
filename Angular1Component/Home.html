@@ -1,0 +1,12 @@
+﻿<h1>Home</h1>
+
+<div ng-if="ctrl.showClock">
+    <clock var="ctrl.clock1"></clock>
+</div>
+
+<button ng-click="ctrl.showClock = !ctrl.showClock">Toggle</button>
+<button ng-click="ctrl.clock1.stop()">Stop</button>
+<button ng-click="ctrl.create()">Create</button>
+<button ng-click="ctrl.clear()">Clear</button>
+
+
